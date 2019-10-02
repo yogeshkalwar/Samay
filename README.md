@@ -17,3 +17,21 @@ Yogesh: Date: 02 Oct 2019
       2) Delegate mechanism
       3) Event responder controls .that's it.
    
+   - Container (or Layout) - Is container is guicomponent? No. It is not GuiComponent, its a container which contains the control and manages their positions or flow. its group of views.
+   like Linear - Horizontal / Vertical. Grid. Flow. Frame... etc
+   - 
+   
+   
+   Naming - for layouts/containers - "ContainerLayout" ? LinearContainerLayout, FrameContainerLayout, GridContainerLayout.
+            SLinearContainer, SFrameContainer
+          - SApplication
+          - SApplicationDelegate
+          - EventResponder (for top parent of View)
+          - SView
+          - SControl
+          - SWindow
+          - SFrame
+          - SContentView
+          - SContainer (like ViewGroup) parent of all containers.
+          
+          
