@@ -41,13 +41,13 @@ endif
 all: SamayTest
 
 dependents:
-	-cd /Volumes/Data/dev/c++/SamayToolkit/Debug && $(MAKE) all
+	-cd /Volumes/Data/dev/github/Samay/SamayToolkit/Debug && $(MAKE) all
 
 # Tool invocations
-SamayTest: $(OBJS) $(USER_OBJS) /Volumes/Data/dev/c++/SamayToolkit/Debug/libSamayToolkit.a
+SamayTest: $(OBJS) $(USER_OBJS) /Volumes/Data/dev/github/Samay/SamayToolkit/Debug/libSamayToolkit.a
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L"/Volumes/Data/dev/c++/SamayToolkit/Debug" -o "SamayTest" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/Volumes/Data/dev/github/Samay/SamayToolkit/Debug" -o "SamayTest" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -57,6 +57,6 @@ clean:
 	-@echo ' '
 
 .PHONY: all clean dependents
-/Volumes/Data/dev/c++/SamayToolkit/Debug/libSamayToolkit.a:
+/Volumes/Data/dev/github/Samay/SamayToolkit/Debug/libSamayToolkit.a:
 
 -include ../makefile.targets

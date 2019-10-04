@@ -17,17 +17,27 @@ enum AppState {
 	FAILED
 };
 
+enum EventCode {
+	CLOSE_APP
+};
+
 class SApplication {
 
 		friend SApplication* getApp();
-
-	protected:
-		static SApplication *gApp;
 
 	public:
 		SApplication();
 		virtual ~SApplication();
 		virtual AppState init() = 0;
+		virtual void deInit();
+
+	protected:
+		static SApplication *gApp;
+
+	private:
+		EventCode start();
+		void initLooper();
+
 };
 
 #endif /* APPARATUS_MAIN_SAPPLICATION_H_ */

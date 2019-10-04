@@ -33,8 +33,8 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.lib.debug.219690809" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.lib.debug">
 								<option id="gnu.cpp.compiler.macosx.lib.debug.option.optimization.level.1902537090" name="Optimization Level" superClass="gnu.cpp.compiler.macosx.lib.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.macosx.lib.debug.option.debugging.level.580277247" name="Debug Level" superClass="gnu.cpp.compiler.macosx.lib.debug.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.911923893" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/Volumes/Data/dev/c++/SamayToolkit/apparatus/headers"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.911923893" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Volumes/Data/dev/github/Samay/SamayToolkit/apparatus/headers"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1758959745" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -71,21 +71,26 @@
 					<folderInfo id="cdt.managedbuild.config.macosx.lib.release.207481319." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.lib.release.1955454725" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.lib.release">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.lib.release.1253065647" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.lib.release"/>
-							<builder buildPath="${workspace_loc:/SamayToolkit}/Release" id="cdt.managedbuild.target.gnu.builder.macosx.lib.release.929433626" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="cdt.managedbuild.target.gnu.builder.macosx.lib.release"/>
+							<builder buildPath="${workspace_loc:/SamayToolkit}/Release" id="cdt.managedbuild.target.gnu.builder.macosx.lib.release.929433626" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.macosx.lib.release"/>
 							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.304319767" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
 							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.1121421346" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.lib.release.1637503136" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.lib.release">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.both.asm.option.include.paths.729244857" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1105198002" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.toolmacosx.lib.release.gnu.archiver.287138918" name="GCC Archiver" superClass="cdt.managedbuild.toolmacosx.lib.release.gnu.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.lib.release.2103526892" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.lib.release">
-								<option id="gnu.cpp.compiler.macosx.lib.release.option.optimization.level.524843591" superClass="gnu.cpp.compiler.macosx.lib.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
-								<option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.macosx.lib.release.option.debugging.level.1137703934" superClass="gnu.cpp.compiler.macosx.lib.release.option.debugging.level" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.macosx.lib.release.option.optimization.level.524843591" name="Optimization Level" superClass="gnu.cpp.compiler.macosx.lib.release.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.macosx.lib.release.option.debugging.level.1137703934" name="Debug Level" superClass="gnu.cpp.compiler.macosx.lib.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1899568718" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Volumes/Data/dev/github/Samay/SamayToolkit/apparatus/headers"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1285874385" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.lib.release.1871867440" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.lib.release">
-								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.macosx.lib.release.option.optimization.level.1213401081" superClass="gnu.c.compiler.macosx.lib.release.option.optimization.level" valueType="enumerated"/>
-								<option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.macosx.lib.release.option.debugging.level.1263389090" superClass="gnu.c.compiler.macosx.lib.release.option.debugging.level" valueType="enumerated"/>
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.macosx.lib.release.option.optimization.level.1213401081" name="Optimization Level" superClass="gnu.c.compiler.macosx.lib.release.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.macosx.lib.release.option.debugging.level.1263389090" name="Debug Level" superClass="gnu.c.compiler.macosx.lib.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.paths.959737277" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.630538821" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 						</toolChain>

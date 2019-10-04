@@ -6,16 +6,14 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include <iostream>
 #include "SApplication.h"
-
-using namespace std;
+#include "Lumber.h"
 
 class MyApplication : public SApplication {
 
 	AppState init() {
-		printf("Welcome Samay Test\n");
-		return AppState::SUCCESS;
+		Lumber::d("MyApplication", "Welcome Samay Test");
+		return SUCCESS;
 	}
 };
 MyApplication myApp;
