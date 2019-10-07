@@ -7,6 +7,9 @@
 
 #ifndef APPARATUS_MAIN_SAPPLICATION_H_
 #define APPARATUS_MAIN_SAPPLICATION_H_
+#include "SEvent.h"
+#include "SLooper.h"
+#include "SApplicationHandler.h"
 
 class SApplication;
 
@@ -15,10 +18,6 @@ SApplication* getApp();
 enum AppState {
 	SUCCESS,
 	FAILED
-};
-
-enum EventCode {
-	CLOSE_APP
 };
 
 class SApplication {
@@ -30,14 +29,15 @@ class SApplication {
 		virtual ~SApplication();
 		virtual AppState init() = 0;
 		virtual void deInit();
+		SLooper* getLooper();
 
 	protected:
 		static SApplication *gApp;
 
 	private:
-		EventCode start();
+		void start();
 		void initLooper();
-
+		SApplicationHandler* mApplicationHandler;
 };
 
 #endif /* APPARATUS_MAIN_SAPPLICATION_H_ */

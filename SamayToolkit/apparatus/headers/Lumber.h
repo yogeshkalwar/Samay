@@ -2,7 +2,7 @@
  * Lumber.h
  *
  *  Created on: 04-Oct-2019
- *      Author: yogkalwa
+ *      Author: Yogesh Kalwar
  */
 
 #ifndef APPARATUS_UTILS_LUMBER_H_

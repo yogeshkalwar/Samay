@@ -10,6 +10,8 @@ RM := rm -rf
 -include sources.mk
 -include apparatus/utils/subdir.mk
 -include apparatus/main/subdir.mk
+-include apparatus/error/subdir.mk
+-include apparatus/core/subdir.mk
 -include subdir.mk
 -include objects.mk
 

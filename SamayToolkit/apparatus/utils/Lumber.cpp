@@ -23,6 +23,6 @@ void Lumber::init(bool debug) {
 
 void Lumber::d(std::string tag, std::string message) {
 	if (gDebug) {
-		printf("%s :: %s\n", tag.c_str(), message.c_str());
+		printf("%s => %s\n", tag.c_str(), message.c_str());
 	}
 }

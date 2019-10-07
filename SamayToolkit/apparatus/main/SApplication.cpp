@@ -14,7 +14,7 @@ SApplication::SApplication() {
 		debug = true;
 	#endif
 	Lumber::init(debug);
-	Lumber::d("SApplication<Constructor>", "Your are in SApplication constructor\n");
+	Lumber::d("SApplication<Constructor>", "Your are in SApplication constructor");
 	initLooper();
 }
 
@@ -25,7 +25,8 @@ SApplication* getApp() {
 }
 
 SApplication::~SApplication() {
-	// TODO Auto-generated destructor stub
+	delete mApplicationHandler;
+	mApplicationHandler = NULL;
 }
 
 void SApplication::deInit() {
@@ -33,15 +34,14 @@ void SApplication::deInit() {
 }
 
 void SApplication::initLooper() {
-	//TODO: create looper
-
+	SLooper::prepareMainLooper();
+	mApplicationHandler = new SApplicationHandler(SLooper::getMainLooper());
 	start();
 }
 
-EventCode SApplication::start() {
-	EventCode code;
-
-	return code;
+void SApplication::start() {
+	SLooper::getMainLooper()->loop();
+	Lumber::d("SApplication<start>", "Closing the application");
 }
 
 int main() {
